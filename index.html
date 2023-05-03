@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UPPAN</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="stylecards.css" type="text/css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <style>
+      .fa {
+        padding: 20px;
+        text-align: center;
+        /* margin: 1px 2px; */
+        font-size: 20px;
+        width: 10px;
+      }
+
+      .fa-facebook {
+        background: #00000000;
+        color: rgb(255, 255, 255);
+      }
+
+      .fa-twitter {
+        background: #00000000;
+        color: white;
+      }
+
+      .fa-pinterest {
+        background: #000000;
+        color: white;
+      }
+
+      .fa-linkedin {
+        background: #000000;
+        color: white;
+      }
+
+      .fa-instagram {
+        background: #00000000;
+        color: white;
+      }
+
+      .fa-youtube {
+        background: #00000000;
+        color: white;
+      }
+
+      .fa-google {
+        background: #000000;
+        color: white;
+      }
+
+      .fa-snapchat-ghost {
+        background: #000000;
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+
+      .fa-skype {
+        background: #000000;
+        color: white;
+      }
+
+      .fa:hover {
+        opacity: 0.5;
+      }
+
+      ul li {
+        list-style: none;
+      }
+   
+    </style>
+     <script>
+      function sendEmail() {
+      // Get form values
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("name2").value;
+      var options = "";
+      var checkboxes = document.getElementsByName("option[]");
+      for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          options += checkboxes[i].value + ", ";
+        }
+      }
+      options = options.slice(0, -2); // Remove the last comma and space
+      
+      // Construct email body
+      var body = "Name: " + name + "\n" +
+                 "Phone: " + email + "\n" +
+                 "Options: " + options;
+                 
+      // Submit form via email
+      window.location.href = "mailto:uppanmusic@gmail.com?subject=Form submission&body=" + encodeURIComponent(body);
+    }
+  </script>
+
+  </head>
+  <body>
+
+    <!-- notification for small viewports and landscape oriented smartphones -->
+    <div class="device-notification">
+      <a class="device-notification--logo" href="#0">
+        <!-- <img src="bluear.jpg" style="height: 100px;" alt="UPPAN"> -->
+        <p>UPPAN</p>
+      </a>
+      <!-- <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p> -->
+    </div>
+
+    <div class="perspective effect-rotate-left">
+      <div class="container">
+        <div class="outer-nav--return"></div>
+        <div id="viewport" class="l-viewport">
+          <div class="l-wrapper">
+            <header class="header">
+              <a class="header--logo" href="#0">
+                <!-- <img src="blueart.jpg "Global"> -->
+                
+                <h1 aria-haspopup="true">UPPAN</h1>
+               
+              </a>
+
+              <!-- <button class="header--cta cta">HIRE FOR WORK</button> -->
+              <div class="header--nav-toggle">
+                
+                <span></span>
+              </div>
+            </header>
+            <nav class="l-side-nav">
+              <ul class="side-nav">
+                <li class="is-active"><span>HOME</span></li>
+                <li><span>SOUNDS</span></li>
+                <li><span>DISCOGRAPHY</span></li>
+               
+                <li><span>HIRE FOR WORK</span></li>
+              </ul>
+            </nav>
+
+            <ul class="l-main-content main-content">
+              <li class="l-section section section--is-active">
+                <div class="intro">
+                  <div class="intro--banner">
+                    <h1>THE STATIC <br />SPEAKS<br />MY NAME.</h1>
+                    <button class="cta">
+                      HIRE FOR WORK
+                      <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 150 118"
+                        style="enable-background: new 0 0 150 118"
+                        xml:space="preserve"
+                      >
+                        <g
+                          transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
+                        >
+                          <path
+                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"
+                          />
+                        </g>
+                      </svg>
+                      <span class="btn-background"></span>
+                    </button>
+                    <a href=""
+                      ><img src="gorgon.jpg" height="100%" alt="Welcome"
+                    /></a>
+                  </div>
+                  <div class="intro--options">
+                    <a href="#0">
+                      <h3>SOUND DESIGN</h3>
+                      <p>
+                        Experience the diverse sounds of Electronic music
+                        coupled with other genres.
+                      </p>
+                    </a>
+                    <a href="#0">
+                      <h3>MIXING & MASTERING</h3>
+                      <p>
+                        5 years of mixing and mastering,although consists mostly
+                        of non conventional ways,paves way for a more perfect
+                        and dynamic mixes.
+                      </p>
+                    </a>
+                    <a href="#0">
+                      <h3>VERSATILITY</h3>
+                      <p>
+                        Quick adaptibility to new genres as well as the retro
+                        ones.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="l-section section">
+                <div class="work">
+                  <h2>RECENT RELEASES</h2>
+                  <div class="work--lockup">
+                    <ul class="slider">
+                      <li class="slider--item slider--item-left">
+                        <a href="https://open.spotify.com/album/55uOD8LpFuskunYRjzidPT?si=uK6_OzV3QRuGDaZPYCczsA">
+                          <div class="slider--item-image">
+                            <img src="gorgon.jpg" alt="gorgon" />
+                          </div>
+                          <p class="slider--item-title">GORGON</p>
+                          <p class="slider--item-description">
+                            Experience the sounds of India and harsh Electronic
+                            music.
+                          </p>
+                        </a>
+                      </li>
+                      <li class="slider--item slider--item-center">
+                        <a href="https://open.spotify.com/album/6Nifr2FIUYcoW4ONbFJRfK?si=pbYyHb9OQ9KQlK9L3OnEjg">
+                          <div class="slider--item-image">
+                            <img src="puzhu.jpg" alt="Self-portrait" />
+                          </div>
+                          <p class="slider--item-title">PUZHU</p>
+                          <p class="slider--item-description">
+                            ONE WORD,KAMMATTIPAADAM
+                          </p>
+                        </a>
+                      </li>
+
+                      <li class="slider--item slider--item-right">
+                        <a href="https://open.spotify.com/album/2oEQFymrLoeRiY6poCL0Q6?si=Dx8mTF-4QCO4prNj5PiU9w">
+                          <div class="slider--item-image">
+                            <img src="lofi.jpg" alt="metro-space" />
+                          </div>
+                          <p class="slider--item-title">Your song</p>
+                          <p class="slider--item-description">sad</p>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="slider--prev">
+                      <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 150 118"
+                        style="enable-background: new 0 0 150 118"
+                        xml:space="preserve"
+                      >
+                        <g
+                          transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
+                        >
+                          <path
+                            d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="slider--next">
+                      <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 150 118"
+                        style="enable-background: new 0 0 150 118"
+                        xml:space="preserve"
+                      >
+                        <g
+                          transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
+                        >
+                          <path
+                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- <li class="l-section section">
+            <div class="work">
+              <h2>LISTEN ON</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="Apple Logo GIF - Apple Logo - Discover & Share GIFs.gif" alt="gorgon">
+                      </div>
+                      <p class="slider--item-title">APPLE MUSIC</p>
+                      
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="Spotify Animated Logo Animation - Mnemonic.gif" alt="Self-portrait">
+                      </div>
+                      <p class="slider--item-title" style="color: #1DB954;">SPOTIFY</p>
+                      
+                    </a>
+                  </li>
+
+    
+
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="metroblue.jpg" alt="metro-space">
+                      </div>
+                      <p class="slider--item-title">YOUTUBE</p>
+                      
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li> -->
+
+              <!-- <li class="l-section section">
+                
+                <div class="about">
+                        
+                  <div class="about--banner">
+                      
+                  </div>
+                </div>
+              </li> -->
+
+              <!-- <li class="l-section section">
+                <div class="contact">
+                
+                  <div class="contact--lockup">
+                    <div class="modal">
+                      <div class="modal--information">
+                    
+                      </div>
+                      <ul class="modal--options">
+                        <li><a href="mailto:uppanmusic@gmail.com">GMAIL</a></li>
+                        <li><a href="#0">INSTAGRAM</a></li>
+                        <li><a href="#0">FACEBOOK</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li> -->
+              <li class="l-section section">
+                <br />
+                <br />
+                <br />
+                <center><h2>DISCOGRAPHY</h2></center>
+
+                <div class="container1">
+                  <a href="https://open.spotify.com/album/3DBYSYAHboSeXffLnAgMuL?si=rQW7YooZT4K6FZn69zlzFA">
+                    <div class="card">
+                      <h3 class="title" style="color: #ffffff">
+                        WISH I WAS A CYBORG
+                      </h3>
+                      <img src="blueart.jpg" />
+                      <div class="bar">
+                        <div class="emptybar"></div>
+                        <div class="filledbar"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://open.spotify.com/album/2oEQFymrLoeRiY6poCL0Q6?si=Dx8mTF-4QCO4prNj5PiU9w">
+                    <div class="card">
+                      <h3 class="title" style="color: rgb(211, 90, 255)">
+                        Your song
+                      </h3>
+                      <img src="lofi.jpg" />
+                      <div class="bar">
+                        <div class="emptybar"></div>
+                        <div class="filledbar"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://open.spotify.com/album/0lPXv8UGb41AXiPxKT0M3T?si=EXY-5TkqTVqQAupa-jpVng">
+                    <div class="card">
+                      <h3 class="title" style="color: rgb(255, 224, 183)">
+                        NGUM
+                      </h3>
+                      <img src="hands.jpg" />
+                      <div class="bar">
+                        <div class="emptybar"></div>
+                        <div class="filledbar"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://open.spotify.com/album/6Nifr2FIUYcoW4ONbFJRfK?si=RGBKZvvRSEiEJrXQ5qYoqA">
+                    <div class="card">
+                      <h3 class="title" style="color: red">PUZHU</h3>
+                      <img src="puzhu.jpg" />
+                      <div class="bar">
+                        <div class="emptybar"></div>
+                        <div class="filledbar"></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="container1">
+                  <a href="https://open.spotify.com/album/3qzgr8yHfORTeLXo2kiHkQ?si=xBCr6la9TES_mmFbq69Y_w">
+                    <div class="card">
+                      <h3 class="title" style="color: #ff7700">YEAH,OKAY</h3>
+                      <img src="IMG_04112021_184210_(3000_x_3000_pixel).jpg" />
+                      <div class="bar">
+                        <div class="emptybar"></div>
+                        <div class="filledbar"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://open.spotify.com/album/1yTARb3dIuxsRPtcSzA6aQ?si=R8KR6Ox3SOW8Q5ZayCcaTA">
+                    <div class="card">
+                      <h3 class="title" style="color: blue">METRO-SPACE</h3>
+                      <img src="metroblue.jpg" />
+                      <div class="bar">
+                        <div class="emptybar"></div>
+                        <div class="filledbar"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://open.spotify.com/album/7ihP8GG4k7nDceGPaIryzO?si=kT9zTe3tQI2hX2RzkRncxg">
+                    <div class="card">
+                      <h3 class="title" style="color: rgb(255, 97, 97)">
+                        SELF-PORTRAIT
+                      </h3>
+                      <img src="red.jpg" />
+                      <div class="bar">
+                        <div class="emptybar"></div>
+                        <div class="filledbar"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://open.spotify.com/album/55uOD8LpFuskunYRjzidPT?si=SvHm9br-RPafjGg3YTwv2g">
+                    <div class="card">
+                      <h3 class="title">GORGON</h3>
+                      <img src="gorgon.jpg" />
+                      <div class="bar">
+                        <div class="emptybar"></div>
+                        <div class="filledbar"></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            
+
+              <li class="l-section section">
+                
+                <div class="hire">
+                 
+                  <!-- <h2>HIRE FOR WORK</h2> -->
+                  <div class="icons">
+      
+                    <a href="https://www.instagram.com/uppan_art/" class="fa fa-instagram" style="color: #feda75"> </a>
+                    <a href="mailto:uppanmusic@gmail.com" class="fa fa-envelope" style="color: #ff7700a9"> </a>
+                    <a href="https://www.youtube.com/channel/UC7nhEb2s0WiD6D0REtpS-EA" class="fa fa-youtube" style="color: #ff0000"> </a>
+                    <a href="https://open.spotify.com/artist/0KTXkOEbzYN39y6kQt3YYz?si=OsAKvFawQAyu1svB7cPQig" class="fa fa-spotify" style="color: #37ff00"></a>
+                    <a href="https://music.apple.com/in/artist/uppan/1564071374" class="fa fa-apple" style="color: #fffff9"></a>
+                    <a href="https://soundcloud.com/ashwin-krishnan-569908576?id=671198669" class="fa fa-soundcloud" style="color: #ff8c00"></a>
+                  </div>
+                  <form method="POST" class="work-request">
+                    <div class="work-request--options">
+                      <span class="options-a">
+                        <input id="opt-1" name="option[]" type="checkbox" value="MIXING" />
+                        <label for="opt-1">
+                          <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 150 111"
+                            style="enable-background: new 0 0 150 111"
+                            xml:space="preserve"
+                          >
+                            <g
+                              transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)"
+                            >
+                              <path
+                                d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"
+                              />
+                            </g>
+                          </svg>
+                          MIXING
+                        </label>
+                        <input
+                          id="opt-2"
+                          type="checkbox"
+                          name="option[]"
+                          value="MASTERING"
+                        />
+                        <label for="opt-2">
+                          <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 150 111"
+                            style="enable-background: new 0 0 150 111"
+                            xml:space="preserve"
+                          >
+                            <g
+                              transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)"
+                            >
+                              <path
+                                d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"
+                              />
+                            </g>
+                          </svg>
+                          MASTERING
+                        </label>
+                        <input
+                          id="opt-3"
+                          type="checkbox"
+                          name="option[]"
+                          value="PRODUCTION"
+                        />
+                        <label for="opt-3">
+                          <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 150 111"
+                            style="enable-background: new 0 0 150 111"
+                            xml:space="preserve"
+                          >
+                            <g
+                              transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)"
+                            >
+                              <path
+                                d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"
+                              />
+                            </g>
+                          </svg>
+                          PRODUCTION
+                        </label>
+                      </span>
+                      <span class="options-b">
+                        <input id="opt-4" type="checkbox" name="option[]" value="SOUND DESIGN" />
+                        <label for="opt-4">
+                          <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 150 111"
+                            style="enable-background: new 0 0 150 111"
+                            xml:space="preserve"
+                          >
+                            <g
+                              transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)"
+                            >
+                              <path
+                                d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"
+                              />
+                            </g>
+                          </svg>
+                          SOUND DESIGN
+                        </label>
+                        <input id="opt-5" type="checkbox" name="option[]" value="VOCAL PROCESSING" />
+                        <label for="opt-5">
+                          <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 150 111"
+                            style="enable-background: new 0 0 150 111"
+                            xml:space="preserve"
+                          >
+                            <g
+                              transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)"
+                            >
+                              <path
+                                d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"
+                              />
+                            </g>
+                          </svg>
+                          VOCAL PROCESSING
+                        </label>
+                        <input id="opt-6" type="checkbox" name="option[]" value="SCORING FOR MOVIES" />
+                        <label for="opt-6">
+                          <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 150 111"
+                            style="enable-background: new 0 0 150 111"
+                            xml:space="preserve"
+                          >
+                            <g
+                              transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)"
+                            >
+                              <path
+                                d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"
+                              />
+                            </g>
+                          </svg>
+                          SCORING FOR MOVIES
+                        </label>
+                      </span>
+                    </div>
+                    <div class="work-request--information">
+                      <div class="information-name">
+                        <input
+                          id="name"
+                          type="text"
+                          name="name"
+                          spellcheck="false"
+                        />
+                        <label for="name">NAME</label>
+                      </div>
+                      <div class="information-email">
+                        <input
+                          id="name2"
+                          type="email"
+                          name="name2"
+                          spellcheck="false"
+                        />
+                        <label for="email">PHONE</label>
+                      </div>
+                    </div>
+
+                    <input type="submit" name="send" onclick="sendEmail()" value="SEND" />
+                   
+                  
+                  
+                    
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <ul class="outer-nav">
+        <li class="is-active">HOME</li>
+        <li>SOUNDS</li>
+        <li>DISCOVER</li>
+    
+        <li>HIRE FOR WORK</li>
+      </ul>
+    </div>
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="jquery-2.2.4.min.js"><\/script>'
+        );
+    </script>
+    
+    <script src="functions-min.js"></script>
+   
+  </body>
+</html>
